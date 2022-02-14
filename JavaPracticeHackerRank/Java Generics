@@ -1,0 +1,15 @@
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+
+class Printer
+{
+   //Write your code here
+   <T> void printArray(T[] elements) {
+       
+       for (T t2 : elements) {
+           System.out.println(t2);
+       }
+   }
+ 
+}
