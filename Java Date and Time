@@ -1,0 +1,32 @@
+public static String findDay(int month, int day, int year) {
+        LocalDate date = LocalDate.of(year, month, day);
+        int dayValue = date.getDayOfWeek().getValue();
+        String result;
+      switch (dayValue) {
+  case 1:
+    result = "MONDAY";
+    break;
+  case 2:
+    result = "TUESDAY";
+    break;
+  case 3:
+    result = "WEDNESDAY";
+    break;
+  case 4:
+    result = "THURSDAY";
+
+    break;
+  case 5:
+    result = "FRIDAY";
+
+    break;
+  case 6:
+    result = "SATURDAY";
+
+    break;
+  case 7:
+    result = "SUNDAY";
+    break;
+}
+       return result;
+    }
