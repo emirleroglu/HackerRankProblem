@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine().trim();
+        // Write your code here.
+        if(s.length()>0) {
+        String [] word =s.split("[ !,?._'@]+");
+        System.out.println(word.length);
+        for (String string : word) {
+            System.out.println(string);
+        }
+        } else {
+        System.out.println(0);
+    }
+        
+        scan.close();
+    }
+}
+
